@@ -1,1 +1,1 @@
-const int tree = 16;
+const int tree = 2;

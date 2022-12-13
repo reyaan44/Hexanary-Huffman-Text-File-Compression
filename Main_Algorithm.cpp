@@ -86,8 +86,8 @@ int main()
     cout<<"FINAL SIZE = "<<compressed_data_size<<" BITS"<<endl<<endl;
     decompressed_data = decrypt(compressed_data, string_to_code_mapping);
 
-    percentage_compression = ((double(input_data_size - compressed_data_size))/input_data_size)*100;
-    cout<<"TOTAL COMPRESSION = "<<percentage_compression<<" %"<<endl;
+    percentage_compression = ((double(input_data_size))/compressed_data_size);
+    cout<<"COMPRESSION RATIO = "<<percentage_compression<<endl<<endl;
 
     timetaken;
     return 0;
